@@ -8,25 +8,19 @@
     <link href="css-style.css" rel="stylesheet">
     <script>
         function calc(cal) {
-
             t1.value = t1.value += cal.value;
-
         }
-
         function del() {
             t1.value = (t1.value).slice(0, (t1.value).length - 1);
         }
-
         function sub() {
             t1.value = eval(t1.value);
         }
-
         function Clear() {
             t1.value = null;
         }
     </script>
 </head>
-
 <body>
     <center>
         <div class="div">
@@ -45,7 +39,6 @@
                     </td>
                     <td>
                         <input type="button" id="btn" name="btn" value="←" onclick="del();"><br>
-
                     </td>
                 </tr>
                 <tr>
@@ -75,7 +68,6 @@
                 <tr>
                     <td>
                         <input type="button" id="btn" name="btn" value="6" onclick="calc(this);">
-
                     </td>
                     <td> <input type="button" id="btn1" name="btn" value="5" onclick="calc(this);">
                     </td>
@@ -100,16 +92,11 @@
                     <td> <input type="button" id="btn" name="btn" value="." onclick="calc(this);">
                     </td>
                     <td>
-
                         <input type="button" value="=" id="btn" onclick="sub();">
                     </td>
-
                 </tr>
             </table>
-
-
         </div>
     </center>
 </body>
-
 </html>
