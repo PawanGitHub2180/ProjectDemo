@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css-style.css" rel="stylesheet">
+    <script>
+        function calc(cal) {
+
+            t1.value = t1.value += cal.value;
+
+        }
+
+        function del() {
+            t1.value = (t1.value).slice(0, (t1.value).length - 1);
+        }
+
+        function sub() {
+            t1.value = eval(t1.value);
+        }
+
+        function Clear() {
+            t1.value = null;
+        }
+    </script>
+</head>
+
+<body>
+    <center>
+        <div class="div">
+            <table>
+                <tr>
+                    <td colspan="4"> <input type="text" name="t1" id="t1" style="text-align:right"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="reset" id="btn" name="btn" value="%" onclick="calc(this);">
+                    </td>
+                    <td> <input type="button" id="btn" name="btn" value="" onclick="calc(this);">
+                    </td>
+                    <td>
+                        <input type="button" id="btn" name="btn" value="" onclick="c(this);">
+                    </td>
+                    <td>
+                        <input type="button" id="btn" name="btn" value="←" onclick="del();"><br>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="reset" id="btn" name="Clear" value="c" onclick="Clear();">
+                    </td>
+                    <td> <input type="button" id="btn" name="btn" value="(" onclick="calc(this);">
+                    </td>
+                    <td>
+                        <input type="button" id="btn" name="btn" value=")" onclick="calc(this);">
+                    </td>
+                    <td>
+                        <input type="button" id="btn" name="btn" value="/" onclick="calc(this);"><br>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td> <input type="button" id="btn" name="btn" value="7" onclick="calc(this);">
+                    </td>
+                    <td> <input type="button" id="btn1" name="btn" value="8" onclick="calc(this);">
+                    </td>
+                    <td> <input type="button" id="btn" name="btn" value="9" onclick="calc(this);">
+                    </td>
+                    <td>
+                        <input type="button" id="btn" name="btn" value="*" onclick="calc(this);"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" id="btn" name="btn" value="6" onclick="calc(this);">
+
+                    </td>
+                    <td> <input type="button" id="btn1" name="btn" value="5" onclick="calc(this);">
+                    </td>
+                    <td><input type="button" id="btn" name="btn" value="4" onclick="calc(this);">
+                    </td>
+                    <td> <input type="button" id="btn" name="btn" value="-" onclick="calc(this);"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="button" id="btn" name="btn" value="3" onclick="calc(this);">
+                    </td>
+                    <td><input type="button" id="btn1" name="btn" value="2" onclick="calc(this);">
+                    </td>
+                    <td> <input type="button" id="btn" name="btn" value="1" onclick="calc(this);">
+                    </td>
+                    <td> <input type="button" id="btn" name="btn" value="+" onclick="calc(this);"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"> <input type="button" id="zero" name="zero" value="0" onclick="calc(this);">
+                    </td>
+                    <td> <input type="button" id="btn" name="btn" value="." onclick="calc(this);">
+                    </td>
+                    <td>
+
+                        <input type="button" value="=" id="btn" onclick="sub();">
+                    </td>
+
+                </tr>
+            </table>
+
+
+        </div>
+    </center>
+</body>
+
+</html>
